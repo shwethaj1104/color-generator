@@ -6,11 +6,11 @@ import Values from 'values.js' //Javascript library to get the tints and shades 
 
 function App() {
 
-  const [color,setColor] = useState('')
-  const [error,setError] = useState(false)
-  const [list,setList] = useState(new Values('#f15025').all(10))
+  const [color, setColor] = useState('')
+  const [error, setError] = useState(false)
+  const [list, setList] = useState(new Values('#f15025').all(10))
 
-  const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     try {
       let colors = new Values(color).all(10)
@@ -22,19 +22,19 @@ function App() {
   }
   return (
     <>
-    <section className='container'>
-      <h3>Color Generator</h3>
-      <form onSubmit={handleSubmit}>
-        <input placeholder='#f15025' type='text' value={color} onChange={(e)=>setColor(e.target.value)} className={`${error ? 'error':null}`}></input>
-        <button type='submit' className='btn'>Submit</button>
-      </form>
-    </section>
-   
-    <section className='colors'>
-     {list.map((color,index)=>{
-      return (<SingleColor key={index} {...color} index={index} hex={color.hex}/>)
-     })}
-    </section>
+      <section className='container'>
+        <h3>Color : </h3>
+        <form onSubmit={handleSubmit}>
+          <input placeholder='#f15025' type='text' value={color} onChange={(e) => setColor(e.target.value)} className={`${error ? 'error' : null}`}></input>
+          <button type='submit' className='btn'>Submit</button>
+        </form>
+      </section>
+
+      <section className='colors'>
+        {list.map((color, index) => {
+          return (<SingleColor key={index} {...color} index={index} hex={color.hex} />)
+        })}
+      </section>
     </>
   )
 }
