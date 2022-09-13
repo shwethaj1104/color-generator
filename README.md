@@ -1,4 +1,4 @@
-# Color Generator App
+# Color Generator Application
 
 Application developed on Recat.js.
 
