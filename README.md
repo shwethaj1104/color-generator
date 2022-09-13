@@ -1,6 +1,6 @@
 # Color Generator Application
 
-Application developed on Recat.js.
+Application developed on React.js.
 
 Used values.js a Javascript library to get the tints and shades of a colour.
 
