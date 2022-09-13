@@ -2,7 +2,7 @@
 
 Application developed on React.js.
 
-Checout application
+Checout application at:https://color-generator-amber.vercel.app/
 
 Used values.js a Javascript library to get the tints and shades of a colour.
 
