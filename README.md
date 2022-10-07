@@ -1,4 +1,4 @@
-# Color Generator App
+# Color Generator 
 
 App developed on React.js.
 
