@@ -1,6 +1,6 @@
 # Color Generator
 
-App developed on React.js.
+Appliction developed on React.js.
 
 Checkout application at : https://color-generator-amber.vercel.app/
 
