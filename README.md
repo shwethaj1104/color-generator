@@ -2,7 +2,7 @@
 
 Application developed on React.js.
 
-Checkout application at : https://color-generator-amber.vercel.app/
+Checkout application at vercel: https://color-generator-amber.vercel.app/
 
 Used values.js, a Javascript library to get the tints and shades of a color.
 
